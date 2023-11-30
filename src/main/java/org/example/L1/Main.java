@@ -1,4 +1,4 @@
-package org.example;
+package org.example.L1;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -15,7 +15,7 @@ public class Main {
         server.setHandler(context);
 
         server.start();
-        System.out.println("Server started");
+        java.util.logging.Logger.getGlobal().info("Server started");
         server.join();
     }
 }
